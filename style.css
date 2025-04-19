@@ -344,12 +344,21 @@ button:hover {
     width: 250px;
     margin: 20px;
     color: white;
+    flex:1;
+   
+}
+.dcb:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
+.dcb:hover img{
+    transform: scale(1.05);
+}
 .hinhanh {
-    width: 100%;
+    width: 300px;
     border-radius: 15px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .trang {
@@ -598,7 +607,7 @@ footer {
     font-size: 30px;
 }
 .hinhanh{
-    width: 200px;
+    width: 100%;
     border-radius: 20px;
 }
 .trang{
