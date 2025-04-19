@@ -1,0 +1,151 @@
+.container-header{
+    font-size: 20px;
+    color: white;
+    display: grid;
+}
+
+.taskbar-header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(95, 239, 153);
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.taskbar-header1{
+   background-color: black;
+}
+
+.ticketbox-font{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.khung-search{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.khung-search input{
+    border: none;
+    outline: none;
+}
+
+.khung-search button{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.tim-kiem{
+    border-right:1px solid rgb(181, 47, 47);
+    
+}
+.taskbar{
+    display: flex;
+    
+}
+.taskbar{
+    list-style: none;
+   
+    
+    
+}
+.taskbar li{
+    padding: 10px;
+}
+
+.taskbar li a:hover{
+    color: rgb(95, 239, 153);
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.button-taosukien{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(95, 239, 153);
+    border:1px solid white;
+    color: white;
+    padding: 10px;;
+}
+
+.button-taosukien:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+.button-dangky{
+    font-weight: 5px bold;
+    border: none;
+    color: white;
+}
+
+.display-flex{
+    display: flex;
+  
+}
+
+.header-right{
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ngonngu {
+    outline: none;
+    border: none;
+    background-color: rgb(95, 239, 153);
+    padding: 10px;
+    position: relative;
+   
+   
+    display: inline-block;
+  }
+
+  .cap1 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .cap1 li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+  }
+
+  .cap1 li a:hover {
+    background-color: rgb(95, 239, 153);
+    opacity: 0.7;
+    transition-property: background-color, opacity;
+    transition-duration: 3s,2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* Khi hover vào .ngonngu thì hiển thị .cap1 */
+  .ngonngu:hover .cap1 {
+    display: block;
+  }
