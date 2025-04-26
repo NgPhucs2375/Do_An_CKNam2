@@ -1,0 +1,240 @@
+.container-header{
+    font-size: 20px;
+    color: white;
+    display: grid;
+}
+
+.taskbar-header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(95, 239, 153);
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.taskbar-header1{
+   background-color: black;
+}
+
+.ticketbox-font{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.khung-search{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.khung-search input{
+    border: none;
+    outline: none;
+}
+
+.khung-search button{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.tim-kiem{
+    border-right:1px solid rgb(181, 47, 47);
+    
+}
+.taskbar{
+    display: flex;
+    
+}
+.taskbar{
+    list-style: none;
+   
+    
+    
+}
+.taskbar li{
+    padding: 10px;
+}
+
+.taskbar li a:hover{
+    color: rgb(95, 239, 153);
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.button-taosukien{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(95, 239, 153);
+    border:1px solid white;
+    color: white;
+    padding: 10px;;
+}
+
+.button-taosukien:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+.button-dangky{
+    font-weight: 5px bold;
+    border: none;
+    color: white;
+}
+
+.display-flex{
+    display: flex;
+  
+}
+
+.header-right{
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ngonngu {
+    outline: none;
+    border: none;
+    background-color: rgb(95, 239, 153);
+    padding: 10px;
+    position: relative;
+   
+   
+    display: inline-block;
+  }
+
+  .cap1 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .cap1 li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+  }
+
+  .cap1 li a:hover {
+    background-color: rgb(95, 239, 153);
+    opacity: 0.7;
+    transition-property: background-color, opacity;
+    transition-duration: 3s,2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* Khi hover vào .ngonngu thì hiển thị .cap1 */
+  .ngonngu:hover .cap1 {
+    display: block;
+  }
+
+
+
+
+  .container {
+    
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 20px;
+    border-left: 6px solid #28a745;
+    padding-left: 12px;
+}
+
+/* Danh sách sự kiện */
+.event-list {
+    display: flex;
+    gap: 20px;
+    
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* Card ngang */
+.event-card {
+    position: relative;
+     flex-shrink: 0;
+    overflow: hidden; 
+     width: 250px;
+    height: 160px; 
+    border-radius: 12px;
+    
+}
+/*
+*/
+
+h3 {
+    margin-top: 0;
+}
+
+/* Card dọc */
+/* .event-card-doc {
+    flex-shrink: 1;
+    width: 220px;
+    height: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+} */
+
+.event-card-doc img {
+    width: 220px;
+    height: 320px;
+    /* object-fit: cover; */
+    transition: transform 0.3s ease;
+}
+
+.event-card-doc:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.event-card-doc:hover img {
+    transform: scale(1.05);
+}
+
+.trang {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.gia {
+    color: #28a745;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.day{
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
