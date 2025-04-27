@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Bán Vé</title>
-    <link rel="stylesheet" href="./TrangChu.css">
+
+    <link rel="icon" type="image/x-icon" href="hinhanhnhom/H/logoweb.jpg" >
+    <link rel="stylesheet" href="Trang_dangnhapcss.css">
+    <link rel="stylesheet" href="TrangChu.css">
+
 </head>
 <body>
 <div class="nenTong">
     <div class="container-header">
         <div class="taskbar-header">
-            <a class="ticketbox-font">ticketbox hello</a>
+            <a class="ticketbox-font">ticketbox</a>
             <div class="khung-search">
-                <input type="search" placeholder="Bạn tìm gì hôm nay?" name="timkiem" class="tim-kiem">
-                <button type="submit" name="timkiem">Tìm kiếm</button>
+                
+                <input type="search" placeholder="Bạn tìm gì hôm nay?" id="timkiem" class="tim-kiem">
+                <label id="timkiem" for="timkiem"  class="button-search">Tìm kiếm</label>
+                
             </div>
             <div class="display-flex header-right">
                 <button class="button-taosukien">Tạo sự kiện</button>
                 <div><a href="#">Vé đã mua</a></div>
-                <a class="button-dangky" href="#">Đăng ký | Đăng nhập</a>
-                <div class="ngonngu" >
-                    <img src="H/co_vn.jpg" width="20px" >
+                <a class="button-dangky" href="#loginModal">Đăng ký | Đăng nhập</a>
+                <div class="ngonngu">
+                    <img src="hinhanhnhom/H/co_vn.jpg" width="20px">
                     <ul class="cap1">
                         <li><a href="#">Tiếng Việt</a></li>
                         <li><a href="#">English</a></li>
@@ -29,6 +35,7 @@
             </div>
         </div>
         <div class="taskbar-header1">
+
             <ul class="taskbar ">
                 <li><a href="TC_NhacSong.html">Nhạc sống</a>
                     <script>
@@ -55,9 +62,43 @@
                             window.open("TC_NhacSong.html", "_blank");
                         };
                     </script></li>
+
             </ul>
         </div>
-        <div class="taskbar-header2"><!--để chèn video hình ảnh--></div>
+        
+    
+        <!-- Modal -->
+        <div id="loginModal" class="modal-custom">
+            <div class="modal-content-custom">
+                <a href="#" class="close-custom">×</a>
+                <div class="modal-header-custom">
+                    <h2>Đăng nhập</h2>
+                    <img src="hinhanhnhom/H/hinhanhdn.jpg" alt="Dog Icon" class="dog-icon-custom">
+                </div>
+                <form class="form">
+                    <label for="email" class="label-custom">Nhập email hoặc số điện thoại</label>
+                    <input type="text" id="email" placeholder="Nhập email hoặc số điện thoại" class="input-custom">
+                    <label for="password" class="label-custom">Nhập mật khẩu</label>
+                    <div class="password-container-custom">
+                        <input type="password" id="password" placeholder="Nhập mật khẩu" class="input-custom">
+                    </div>
+                    <button type="submit" class="continue-btn-custom">Tiếp tục</button>
+                    <a href="#" class="forgot-password-custom">Quên mật khẩu?</a>
+                    <p class="text-custom">Chưa có tài khoản? <a href="#" class="link-custom">Tạo tài khoản ngay</a></p>
+                    <p class="text-custom">Hoặc</p>
+                    <button type="button" class="google-btn-custom">Đăng nhập với Google</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="taskbar-header2">
+        <video width="500px" controls autoplay muted>
+            <source src="Videov/vd_hd_1.mp4" type="video/mp4">
+        </video>
+        <video width="500px" controls autoplay muted>
+            <source src="Videov/vd_hd_2.mp4" type="video/mp4">
+        </video>
+       
     </div>
 
     
@@ -242,11 +283,6 @@
         </div>
     </div>
 
-
-
-
-
-    
     <div class="BangGiamGia"><!-- Bảng Giảm giá -->
 
         <a href="#">
