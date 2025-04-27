@@ -1,0 +1,140 @@
+/* Chỉ thêm CSS cho các class và ID mới, không chỉnh sửa class cũ */
+
+/* Modal */
+.modal-custom {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hiển thị modal khi ID #loginModal được target */
+#loginModal:target {
+    display: flex;
+}
+
+.modal-content-custom {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Nút đóng */
+.close-custom {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Tiêu đề và biểu tượng */
+.modal-header-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header-custom h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #00c4b4; /* Màu xanh giống trong hình */
+}
+
+.dog-icon-custom {
+    width: 40px;
+    height: 40px;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-custom {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-custom {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.password-container-custom {
+    position: relative;
+}
+
+.continue-btn-custom {
+    background-color: #ccc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.continue-btn-custom:hover {
+    background-color: #28e975;
+}
+
+.forgot-password-custom, .link-custom {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.text-custom {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+    color: #666;
+}
+
+.google-btn-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.google-btn-custom:hover {
+    background-color: #17cf33;
+}
+
+/* Responsive */
+/* @media (max-width: 500px) {
+    .modal-content-custom {
+        width: 90%;
+    }
+} */
+
