@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Bán Vé</title>
-<<<<<<< HEAD
 
-    <link rel="stylesheet" href="./TrangChu.css">
-
-=======
     <link rel="icon" type="image/x-icon" href="hinhanhnhom/H/logoweb.jpg" >
     <link rel="stylesheet" href="Trang_dangnhapcss.css">
     <link rel="stylesheet" href="TrangChu.css">
->>>>>>> Chi_Tam
+
 </head>
 <body>
 
@@ -39,8 +35,16 @@
             </div>
         </div>
         <div class="taskbar-header1">
-            <ul class="taskbar">
-                <li><a href="#">Nhạc sống</a></li>
+
+            <ul class="taskbar ">
+                <li><a href="TC_NhacSong.html">Nhạc sống</a>
+                    <script>
+                        document.getElementById("TC_NhacSong").onclick = function() {
+                            window.open("TC_NhacSong.html", "_blank");
+                        };
+                    </script>
+            </li>
+
                 <li><a href="#">Sân khấu & Nghệ thuật</a></li>
                 <li><a href="#">Thể thao</a></li>
                 <li><a href="#">Khác</a></li>
