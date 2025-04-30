@@ -29,7 +29,8 @@ body {
     font-size: 20px;
     color: white;
     display: grid;
-    position: sticky;
+    position: sticky; /*  sticky nếu bạn muốn cố định */
+    z-index:1000; 
     top: 0;
 }
 
@@ -241,6 +242,7 @@ nav a:hover {
 .container {
     width: 90%;
     max-width: 1200px;
+    clear:both;
     margin: 40px auto;
 }
 
@@ -259,6 +261,7 @@ nav a:hover {
     gap: 20px;
     overflow-x: auto;
     padding-bottom: 10px;
+    clear:both;
 }
 
 /* Card ngang */
