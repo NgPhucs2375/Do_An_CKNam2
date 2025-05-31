@@ -25,7 +25,14 @@
             </div>
             <div class="display-flex header-right">
                 <button class="button-taosukien">Tạo sự kiện</button>
-                <div><a href="#">Vé đã mua</a></div>
+                <div class="gh">
+                    <li><a href="giohang.html" class="agh">Giỏ Hàng</a>
+                        <script>
+                            document.getElementById("giohang").onclick = function() {
+                                window.open("giohang.html", "_blank");
+                            };
+                        </script></li>
+                </div>
                 <a class="button-dangky" href="#loginModal">Đăng ký | Đăng nhập</a>
                 <div class="ngonngu">
                     <img src="hinhanhnhom/H/co_vn.jpg" width="20px">
@@ -64,6 +71,14 @@
                             window.open("TC_NhacSong.html", "_blank");
                         };
                     </script></li>
+
+<li><a href="banggia.html">Bảng Giá</a>
+    <script>
+        document.getElementById("banggia").onclick = function() {
+            window.open("banggia.html", "_blank");
+        };
+    </script>
+</li>
 
             </ul>
         </div>
