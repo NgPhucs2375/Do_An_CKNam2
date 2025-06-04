@@ -11,35 +11,35 @@
       color: #007bff;
     }
 
-    .price-table {
+    .tablegia {
       width: 100%;
       max-width: 900px;
       margin: 30px auto;
       border-collapse: collapse;
       background-color: white;
-      border: 2px solid #000; /* Viền ngoài đậm */
+      border: 2px solid #000; 
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    .price-table th,
-    .price-table td {
-      border: 1.5px solid #333; /* Viền từng ô rõ nét */
+    .tablegia th,
+    .tablegia td {
+      border: 1.5px solid #333; 
       padding: 14px 18px;
       text-align: left;
       font-size: 16px;
     }
 
-    .price-table th {
+    .tablegia th {
       background-color: #007bff;
       color: white;
       font-weight: bold;
     }
 
-    .price-table tr:nth-child(even) {
+    .tablegia tr:nth-child(even) {
       background-color: #f9f9f9;
     }
 
-    .price-table tr:hover {
+    .tablegia tr:hover {
       background-color: #e8f0fe;
     }
 

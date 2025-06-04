@@ -666,5 +666,12 @@ footer {
     display: flex;
    padding: 0 40px 0 0;
 }
+/**/ 
+.agh{
+    color: #fff;
+} 
+.gh li{
+    list-style: none;
+}
 
 
