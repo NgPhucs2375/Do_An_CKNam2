@@ -48,14 +48,40 @@
 </div>
 
     <div class="taskbar-header2">
-        <video width="500px" controls autoplay muted>
+       <div class="container d-flex justify-content-center my-4">
+  <div id="videoCarousel" class="carousel slide w-100" style="max-width: 800px;" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="ratio ratio-16x9">
+          <video class="d-block w-100" controls autoplay muted>
             <source src="Videov/vd_hd_1.mp4" type="video/mp4">
-        </video>
-        <video width="500px" controls autoplay muted>
+          </video>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ratio ratio-16x9">
+          <video class="d-block w-100" controls autoplay muted>
             <source src="Videov/vd_hd_2.mp4" type="video/mp4">
-        </video>
+          </video>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Nút điều hướng -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Trước</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Tiếp</span>
+    </button>
+  </div>
+</div>
        
     </div>       
+
             <div class="container">
                  <!--  su kien dac biet -->
                     <h2 class="title"> Sự kiện đặc biệt </h2>
