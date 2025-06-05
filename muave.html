@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>muave</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/muave.css">
+ 
+</head>
+<body>
+
+<div class="container py-4">
+  <div class="event-header mb-4">
+    <h4>[POP PUNK CỰC MẠNH VOL.2]</h4>
+    <p><strong>🗓️ Thời gian:</strong> 16:00 - 22:30, 07/12/2025</p>
+                <p><strong>📍 Địa điểm:</strong> ARCAN SAIGON</p>
+                <p>236/29/2H dien bien phu, binh thanh, 17, Ho Chi Minh City, Vietnam</p>
+    <div class="timer-box w-25">
+  Hoàn tất đặt vé trong<br>
+  <span class="fs-4" id="countdown-timer">15:00</span>
+</div>
+<script>
+  let timeLeft = 15 * 60; 
+
+  const countdownElement = document.getElementById("countdown-timer");
+
+  const countdownInterval = setInterval(() => {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+
+    countdownElement.textContent =
+      `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    timeLeft--;
+
+    if (timeLeft < 0) {
+      clearInterval(countdownInterval);
+      countdownElement.textContent = "Đã hết thời gian";
+      countdownElement.style.color = "red";
+    }
+  }, 1000);
+</script>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-8">
+      <div class="form-section">
+        <h5 class="mb-3 text-success">BẢNG CÂU HỎI</h5>
+        <form>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Số điện thoại của bạn *</label>
+            <input type="text" class="form-control" id="phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email của bạn *</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Địa chỉ giao hàng Lightstick (nếu có)</label>
+            <input type="text" class="form-control" id="address">
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="agree-event" required>
+            <label class="form-check-label" for="agree-event">
+              Bạn xác nhận mua vé cho sự kiện TP.HCM?
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="agree-terms" required>
+            <label class="form-check-label" for="agree-terms">
+              Bạn xác nhận đã đọc và đồng ý với các điều khoản tham gia sự kiện?
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="summary-section">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h6>Thông tin đặt vé</h6>
+        
+        </div>
+        <p class="mb-1">Loại vé: <strong>REGULAR TICKET</strong></p>
+        <p class="mb-1">Số lượng: <strong>01</strong></p>
+        <hr>
+        <h5 class="text-success">Tạm tính: 755.000 đ</h5>
+        <a href="/camon.html" class="btn btn-success buy-ticket">Thanh toán</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
