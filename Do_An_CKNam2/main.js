@@ -92,3 +92,35 @@ function startFlashSaleCountdown(durationInMinutes) {
 window.addEventListener("DOMContentLoaded", () => {
   startFlashSaleCountdown(10); // đếm ngược 10 phút
 });
+
+
+
+// Lấy element Modal theo id
+    const productModal = document.getElementById('productDetailModal');
+
+    // Lắng nghe sự kiện "show.bs.modal" của Bootstrap 5
+    productModal.addEventListener('show.bs.modal', function (event) {
+      // event.relatedTarget chính là button mới được click
+      const button = event.relatedTarget;
+
+      // Lấy dữ liệu từ các data-attributes trên button
+      const imageSrc   = button.getAttribute('data-image');
+      const titleText  = button.getAttribute('data-title');
+      const descText   = button.getAttribute('data-description');
+      const priceText  = button.getAttribute('data-price');
+      const skuText    = button.getAttribute('data-sku');
+
+      // Tìm các thẻ trong modal để đổ dữ liệu
+      const modalImage       = productModal.querySelector('#modalProductImage');
+      const modalTitle       = productModal.querySelector('#modalProductTitle');
+      const modalDescription = productModal.querySelector('#modalProductDescription');
+      const modalPrice       = productModal.querySelector('#modalProductPrice');
+      const modalSKU         = productModal.querySelector('#modalProductSKU');
+
+      // Cập nhật nội dung vào modal
+      modalImage.src            = imageSrc;
+      modalTitle.innerText      = titleText;
+      modalDescription.innerText = descText;
+      modalPrice.innerText      = 'Giá: ' + priceText;
+      modalSKU.innerText        = skuText;
+    });

@@ -53,13 +53,13 @@
   <div class="col-12">
     <ul class="nav nav-pills justify-content-center gap-3">
       <li class="nav-item">
-        <a class="nav-link btn btn-outline-light text-black" href="./SKKhac.html">Sự kiện khác</a>
+        <a class="nav-link btn btn-outline-light text-white" href="./SKKhac.html">Sự kiện khác</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-outline-light text-black" href="./banggia.html">Bảng giá</a>
+        <a class="nav-link btn btn-outline-light text-white" href="./banggia.html">Bảng giá</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-outline-light text-black" href="#null">NULL</a>
+        <a class="nav-link btn btn-outline-light text-white" href="#null">Mô Tả</a>
       </li>
     </ul>
   </div>
@@ -278,15 +278,25 @@
     </div>
 
     <!-- Quảng cáo  -->
-  <div class="container py-4">
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-      <div class="card bg-dark text-white shadow-sm border-0">
-        <a href="#" class="text-white text-decoration-none">
-          <img src="./hinhanhnhom/breakef.jpg" class="card-img img-fluid" alt="Rest in Peace">
-          <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: rgba(0,0,0,0.4);">
-            <h5 class="card-title mb-1">Giảm 10K</h5>
-            <p class="card-text small">Cho đơn hàng từ 200K</p>
+<div class="container py-4">
+  <div class="justify-content-center">
+    <div class="text-center mb-4">
+      <!-- Thêm lớp card-custom vào đây: -->
+      <div class="card card-custom bg-dark text-white shadow-sm border-0">
+        <a href="#" class="text-white text-decoration-none d-block h-100">
+          <!-- Ảnh sẽ phủ kín cả chiều cao và rộng của .card -->
+          <img src="./hinhanhnhom/breakef.jpg"
+               class="card-img img-fluid"
+               alt="Rest in Peace" />
+          <!-- Overlay nằm chồng lên ảnh, chính giữa theo cả 2 trục -->
+          <div class="card-img-overlay overlay d-flex 
+                      justify-content-center align-items-center flex-column">
+           <h5 class="card-title mb-2">Ưu Đãi Cuối Tuần: GIẢM 10K</h5>
+                <p class="card-text">
+                  Áp dụng cho đơn hàng từ 200K • Chỉ từ 1–7/06<br>
+                  Nhanh tay đặt ngay kẻo trễ!
+                </p>
+
           </div>
         </a>
       </div>
