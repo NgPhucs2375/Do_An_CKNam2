@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Trang_dangnhapcss.css">
+</head>
+<body style="background-color: aqua;">
+    <div id= "elementdangky"style="display: grid;justify-content: center;align-items: center;">
+        <div class="modal-content-custom">
+            <div class="modal-header-custom">
+                <h2>Đăng ký</h2>
+                <img src="hinhanhnhom/H/hinhanhdn.jpg" alt="Dog Icon" class="dog-icon-custom">
+            </div>
+            <form id="formregister" class="form">
+                <label for="yourname" class="label-custom">Nhập Tên của bạn</label>
+                <input type="text" id="yourname" placeholder="Nhập Tên của bạn" class="input-custom">
+                <div id="yournameError" style="color: red;font-size: 10px;display: none;">Tên không được để trống</div>
+
+                <label for="email" class="label-custom">Nhập email</label>
+                <input type="text" id="email" placeholder="Nhập email" class="input-custom">
+                <div id="emailError" style="color: red;font-size: 10px;display: none;">Email không được để trống</div>
+
+                <label for="sdt" class="label-custom">Nhập số điện thoại</label>
+                <input type="tel" id="sdt" placeholder="Nhập số điện thoại" class="input-custom">
+                <div id="sdtError" style="color: red;font-size: 10px;display: none;">Số điện thoại không được để trống</div>
+
+                <label for="password" class="label-custom">Nhập mật khẩu</label>
+                <div class="password-container-custom">
+                    <input type="password" id="password" placeholder="Nhập mật khẩu" class="input-custom">
+                </div>
+                <div id="passwordError" style="color: red;font-size: 10px;display: none;">Mật khẩu không được để trống</div>
+
+                <label for="repassword" class="label-custom">Nhập lại mật khẩu</label>
+                <div class="password-container-custom">
+                    <input type="password" id="repassword" placeholder="Nhập lại mật mật khẩu" class="input-custom">
+                </div>
+                <div id="repasswordError" style="color: red;font-size: 10px;display: none;">Nhập lại mật khẩu không được để trống</div>
+
+                <button type="submit" class="continue-btn-custom">Đăng ký</button>
+                <p class="text-custom">Bạn đã có tài khoản? <a href="TrangChu.html" class="link-custom">Đăng nhập</a></p>
+                
+            </form>
+        </div>
+    </div>
+    
+    
+    <script src="./register.js"></script>
+</body>
+
+</html>

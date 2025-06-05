@@ -131,10 +131,12 @@
     background-color: #17cf33;
 }
 
-/* Responsive */
-/* @media (max-width: 500px) {
-    .modal-content-custom {
-        width: 90%;
-    }
-} */
+.baoloi{
+    color: red;
+    padding: 20px;
+    background-color: #ffa5a5;
+    display: none;
+}
+
+
 
