@@ -23,9 +23,12 @@
     <div class="row align-items-center justify-content-between gx-3">
       
       <!-- Logo -->
-      <div class="col-auto">
-        <a href="#" class="fw-bold fs-3 text-white" style="font-family: fantasy;">ticketbox</a>
-      </div>
+        <div class="col-auto">
+            <a href="#" class="fw-bold fs-1 text-white px-3" style="font-family: fantasy;">
+                ticketbox
+             </a>
+        </div>
+
 
       <!-- Thanh tìm kiếm -->
       <div class="col">
@@ -44,18 +47,62 @@
       </div>
       
     </div>
+
+    <!-- === SAU KHI KẾT THÚC HÀNG HEADER === -->
+<div class="row mt-4">
+  <div class="col-12">
+    <ul class="nav nav-pills justify-content-center gap-3">
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-light text-black" href="./SKKhac.html">Sự kiện khác</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-light text-black" href="./banggia.html">Bảng giá</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-light text-black" href="#null">NULL</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
   </div>
 </div>
 
     <div class="taskbar-header2">
-        <video width="500px" controls autoplay muted>
+       <div class="container d-flex justify-content-center my-4">
+  <div id="videoCarousel" class="carousel slide w-100" style="max-width: 800px;" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="ratio ratio-16x9">
+          <video class="d-block w-100" controls autoplay muted>
             <source src="Videov/vd_hd_1.mp4" type="video/mp4">
-        </video>
-        <video width="500px" controls autoplay muted>
+          </video>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ratio ratio-16x9">
+          <video class="d-block w-100" controls autoplay muted>
             <source src="Videov/vd_hd_2.mp4" type="video/mp4">
-        </video>
+          </video>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Nút điều hướng -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Trước</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Tiếp</span>
+    </button>
+  </div>
+</div>
        
     </div>       
+
             <div class="container">
                  <!--  su kien dac biet -->
                     <h2 class="title"> Sự kiện đặc biệt </h2>
@@ -63,7 +110,7 @@
                       
                             <!-- Sự kiện 1 -->
                             <div class="event-card-doc">
-                                <a href="#"><img src="./hinhanhnhom/hinh/poppunkcucmanh2.jpg" alt="Sự kiện 1"></a>
+                                <a href="/Do_An_CKNam2/TC_2ppcm2.html"><img src="./hinhanhnhom/hinh/poppunkcucmanh2.jpg" alt="Sự kiện 1"></a>
                               </div>
                               <!-- Sự kiện 2 -->
                             <div class="event-card-doc">
