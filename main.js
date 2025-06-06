@@ -1,7 +1,0 @@
-// 
-
-
-
-// script login
-
-// script register

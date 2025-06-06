@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Vé</title>
+      <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (nếu muốn dùng icon của Bootstrap) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="hinhanhnhom/H/logoweb.jpg" >
+    <link rel="stylesheet" href="Trang_dangnhapcss.css">
+    <link rel="stylesheet" href="TrangChu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="nenTong">
+
+    <div class="container-header">
+        <div class="taskbar-header">
+            <a class="ticketbox-font">ticketbox</a>
+            <div class="khung-search">
+                
+        
+                <input type="search" placeholder="Bạn tìm gì hôm nay?" id="timkiem" class="tim-kiem">
+                <button id="nutTimKiem" class="button-search">Tìm kiếm</button>
+               
+                <script src="timkiemk.js"></script>
+            </div>
+            <div class="display-flex header-right">
+                <button class="button-taosukien"><a href="TAOSK.html">Tạo sự kiện</a></button>
+                <div><a href="#">Vé đã mua</a></div>
+                <a class="button-dangky" href="#loginModal">Đăng ký | Đăng nhập</a>
+
+                <img id="userAvatar" src="hinhanhnhom/H/hinhanhdn.jpg" alt="avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;display: none;">
+                <span id="userLG"></span>
+            </div>
+        </div>
+        <!-- Modal -->
+        <form id="loginModal" class="modal-custom">
+            <div class="modal-content-custom">
+                <a href="#" class="close-custom">×</a>
+                <div class="modal-header-custom">
+                    <h2>Đăng nhập</h2>
+                    <img src="hinhanhnhom/H/hinhanhdn.jpg" alt="Dog Icon" class="dog-icon-custom">
+                </div>
+                <div class="form">
+                    <label for="email" class="label-custom">Nhập email hoặc số điện thoại</label>
+                    <input type="text" id="email" placeholder="Nhập email" class="input-custom">
+                    <label for="password" class="label-custom">Nhập mật khẩu</label>
+                    <div class="password-container-custom">
+                        <input type="password" id="password" placeholder="Nhập mật khẩu" class="input-custom">
+                    </div>
+                    <div id="alertError" class="baoloi">[!] Email hoặc mật khẩu không đúng</div>
+                    <button type="submit" class="continue-btn-custom">Đăng nhập</button>
+                    <a href="#" class="forgot-password-custom">Quên mật khẩu?</a>
+                    <p class="text-custom">Chưa có tài khoản? <a href="Taotaikhoan.html" class="link-custom">Tạo tài khoản ngay</a></p>
+                  
+                </div>
+            </div>
+        </form>
+        <script src="login.js"></script>
+        <script src="nguoidung.js"></script>
+        </div>
+    <!-- === SAU KHI KẾT THÚC HÀNG HEADER === -->
+<div class="row mt-4">
+  <div class="col-12">
+    <ul class="nav nav-pills justify-content-center gap-3">
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-light text-black" href="./SKKhac.html">Sự kiện khác</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-light text-black" href="./banggia.html">Bảng giá</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-light text-black" href="#null">NULL</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+</div>
+
+    <div class="taskbar-header2">
+       <div class="container d-flex justify-content-center my-4">
+  <div id="videoCarousel" class="carousel slide w-100" style="max-width: 800px;" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="ratio ratio-16x9">
+          <video class="d-block w-100" controls autoplay muted>
+            <source src="Videov/vd_hd_1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ratio ratio-16x9">
+          <video class="d-block w-100" controls autoplay muted>
+            <source src="Videov/vd_hd_2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Nút điều hướng -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Trước</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Tiếp</span>
+    </button>
+  </div>
+</div>
+       
+    </div>       
+
+            <div class="container">
+                 <!--  su kien dac biet -->
+                    <h2 class="title"> Sự kiện đặc biệt </h2>
+                    <div class="event-list">
+                      
+                            <!-- Sự kiện 1 -->
+                            <div class="event-card-doc">
+                                <a href="/Do_An_CKNam2/TC_2ppcm2.html"><img src="./hinhanhnhom/hinh/poppunkcucmanh2.jpg" alt="Sự kiện 1"></a>
+                              </div>
+                              <!-- Sự kiện 2 -->
+                            <div class="event-card-doc">
+                                <a href="#"><img src="./hinhanhnhom/hinh/poppunkcucmanh3.jpg" alt="Sự kiện 2"></a>
+                              </div>
+                              <!-- Sự kiện 3 -->
+                            <div class="event-card-doc">
+                                <a href="#"><img src="./hinhanhnhom/hinh/Yên.jpg" alt="Sự kiện 3"></a>
+                              </div>
+                                <!-- Sự kiện 4 -->
+                            <div class="event-card-doc">
+                                <a href="#"><img src="./hinhanhnhom/hinh/kofi9.jpg" alt="Sự kiện 4"></a>
+                            </div>
+                                 <!-- Sự kiện 5 -->
+                            <div class="event-card-doc">
+                                <a href="#"><img src="./hinhanhnhom/hinh/giấy gấp.jpg" alt="Sự kiện 5"></a>
+                            </div>
+                                  <!-- Sự kiện 6 -->
+                            <div class="event-card-doc">
+                                <a href="#"><img src="./hinhanhnhom/hinh/tepriu.jpg" alt="Sự kiện 6"></a>
+                            </div>
+        
+        
+                    </div>
+                
+        
+                 <!--   su kien su huong -->
+                    <h2 class="title"> Sự kiện xu hướng </h2>
+                    <div class="event-list">
+                        <!-- Sự kiện 1 -->
+                        <div class="event-card">
+                            <a href="./TC_1ntpmm.html   "><img src="./hinhanhnhom/hinh/ntpmm.png" alt="Sự kiện 1"></a>
+                            <!-- <script>
+                                document.getElementById("TC_01").onclick = function() {
+                                    window.open("TC_1ntpmm.html", "_blank");
+                                };
+                            </scrip> -->
+                          <span class="number">1</span>
+                        </div>
+        
+                        <!-- Sự kiện 2 -->
+                        <div class="event-card">
+                            <a href="#"><img src="./hinhanhnhom/hinh/cam the 8.jpg" alt="Sự kiện 2"></a>
+                          <span class="number">2</span>
+                        </div>
+        
+                         <!-- Sự kiện 3 -->
+                        <div class="event-card">
+                            <a href="#"><img src="./hinhanhnhom/hinh/ppcm.jpg" alt="Sự kiện 3"></a>
+                          <span class="number">3</span>
+                        </div>
+        
+                        <!-- Sự kiện 4 -->
+                        <div class="event-card">
+                            <a href="#"><img src="./hinhanhnhom/hinh/pankxac.jpg" alt="Sự kiện 4"></a>
+                          <span class="number">4</span>
+                        </div>
+        
+                        <!-- Sự kiện 5 -->
+                        <div class="event-card">
+                            <a href="#"><img src="./hinhanhnhom/hinh/hrc.jpg" alt="Sự kiện 5"></a>
+                            <span class="number">5</span>
+                          </div>
+                </div>
+            
+       
+
+        
+ 
+
+
+    
+        <h1 >Dành cho Bạn</h1>
+        <div class="chinh">
+    
+            <div class="dcb"> 
+                <a href="#"> <img src="hinhanhnhom/dcb1.PNG " class="hinhanh"></a>
+                <h1 class="trang">[FLOWER 1969’s] WORKSHOP CANDLE - HỌC LÀM NẾN THƠM</h1>
+                <h2 class="gia"> Từ 279.000 đ</h2>
+                <div class="ngay-flex">
+                    <img src="hinhanhnhom/nut.PNG " style="width: 30px;border-radius: 100px; background-color: black;">
+                   <p class="ngay"> 13 tháng 04, 2025</p>
+            </div>
+            </div>
+        
+            <div class="dcb"> 
+                <a href="#"> <img src="hinhanhnhom/dcb2.PNG " class="hinhanh"></a>
+                <h1 class="trang">Nhà Hát Kịch IDECAF: Cái gì Vui Vẻ thì mình Ưu Tiên</h1>
+                <h2 class="gia"> Từ 270.000 đ</h2>
+                <div class="ngay-flex">
+                    <img src="hinhanhnhom/nut.PNG " style="width: 30px;border-radius: 100px; background-color: black;";>
+                    <P class="ngay">13 tháng 04, 2025</P>
+            </div>
+                
+            </div>
+            <div class="dcb"> 
+                <a href="#"> <img src="hinhanhnhom/dcb3.PNG " class="hinhanh"></a>
+                <h1 class="trang">LULULOLA SHOW HOÀNG HẢI | ĐÃ SAI TỪ LÚC ĐẦU</h1>
+                <h2 class="gia"> Từ 450.000 đ</h2>
+                <div class="ngay-flex">
+                 <img src="hinhanhnhom/nut.PNG " style="width: 30px;border-radius: 100px; background-color: black">
+                    <P class="ngay">19 tháng 04, 2025</P>
+            </div>
+               
+            </div>
+        
+            <div class="dcb"> 
+                <a href="#">  <img src="hinhanhnhom/dcb4.PNG " class="hinhanh"></a>
+                <h1 class="trang">[FLOWER 1969’s] ROLLERBALL PERFUME WORKSHOP - NƯỚC HOA LĂN</h1>
+                <h2 class="gia"> Từ 279.000 đ</h2>
+                <div class="ngay-flex">
+                    <img src="hinhanhnhom/nut.PNG " style="width: 30px; background-color: black; border-radius: 100px;";>
+                    <P class="ngay">06 tháng 04, 2025</P>
+            </div>
+            </div>
+        
+        </div>
+        <h1 style="border-bottom: 10px solid rgb(18, 219, 18);">Cuối tuần này</h1>
+        <div class="chinh">
+            
+            <div class="dcb"> 
+                <a href="#"> <img src="hinhanhnhom/ctn1.PNG " class="hinhanh"></a>
+                <h1 class="trang">CINÉ FUTURE HITS #7: NEGAV</h1>
+                <h2 class="gia"> Từ 500.000 đ</h2>
+                <div class="ngay-flex">
+                    <img src="hinhanhnhom/nut.PNG " style="width: 30px;border-radius: 100px; background-color: black;";>
+                   <p class="ngay"> 13 tháng 04, 2025</p>
+            </div>
+            </div>
+        
+            <div class="dcb"> 
+                <a href="#"> <img src="hinhanhnhom/ctn2.PNG " class="hinhanh"></a>
+                <h1 class="trang">[THE MIRAGE SHOW] LIVE SHOW BÙI ANH TUẤN & MAI TIẾN DŨNG & PHƯỢNG VŨ | SYMPHONY ...
+        
+                </h1>
+                <h2 class="gia"> Từ 600.000 đ</h2>
+                <div class="ngay-flex">
+                    <img src="hinhanhnhom/nut.PNG " style="width: 30px;border-radius: 100px; background-color: black;";>
+                    <P class="ngay">13 tháng 04, 2025</P>
+            </div>
+                
+            </div>
+            <div class="dcb"> 
+                <a href="#">   <img src="hinhanhnhom/ctn3.PNG " class="hinhanh"></a>
+                <h1 class="trang">[FLOWER 1969’s] WORKSHOP SOLID PERFUME - NƯỚC HOA KHÔ</h1>
+                <h2 class="gia"> Từ 279.000 đ</h2>
+                <div class="ngay-flex">
+                    <img src="hinhanhnhom/nut.PNG " style="width: 30px;border-radius: 100px; background-color: black;";>
+                    <P class="ngay">19 tháng 04, 2025</P>
+            </div>
+               
+            </div>
+        
+            <div class="dcb"> 
+                <a href="#"> <img src="hinhanhnhom/ctn4.PNG " class="hinhanh"></a>
+                <h1 class="trang">[FLOWER 1969’s] ROLLERBALL PERFUME WORKSHOP - NƯỚC HOA LĂN</h1>
+                <h2 class="gia"> Từ 459.000 đ</h2>
+                <div class="ngay-flex">
+                    <img src="hinhanhnhom/nut.PNG " style="width: 30px; background-color: black; border-radius: 100px;";>
+                    <P class="ngay">06 tháng 04, 2025</P>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <!-- Quảng cáo  -->
+  <div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card bg-dark text-white shadow-sm border-0">
+        <a href="#" class="text-white text-decoration-none">
+          <img src="./hinhanhnhom/breakef.jpg" class="card-img img-fluid" alt="Rest in Peace">
+          <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: rgba(0,0,0,0.4);">
+            <h5 class="card-title mb-1">Giảm 10K</h5>
+            <p class="card-text small">Cho đơn hàng từ 200K</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+    
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-item">
+                        <h3>Hotline</h3>
+                        <p>Thứ 2 - Chủ Nhật (8:30 - 23:00)</p>
+                        <p><strong>1900.6408</strong></p>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:support@ticketbox.vn">support@ticketbox.vn</a></p>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Văn phòng</h3>
+                        <p>Lầu 12, 17 Bà Huyện Thanh Quan, Phường 6, Quận 3, TP. Hồ Chí Minh</p>
+                    </div>
+                </div>
+        
+                <div class="footer-center">
+                    <div class="footer-item">
+                        <h3>Dành cho Khách hàng</h3>
+                        <p><a href="#">Điều khoản sử dụng cho khách hàng</a></p>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Dành cho Ban Tổ chức</h3>
+                        <p><a href="#">Điều khoản sử dụng cho ban tổ chức</a></p>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Đăng ký nhận email</h3>
+                        <form>
+                            <input type="email" placeholder="Your Email">
+                            <button type="submit">Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+        
+                <div class="footer-right">
+                    <div class="footer-item">
+                        <h3>Về công ty chúng tôi</h3>
+                        <ul>
+                            <li><a href="#">Quy chế hoạt động</a></li>
+                            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                            <li><a href="#">Cơ chế giải quyết tranh chấp/khiêu nại</a></li>
+                            <li><a href="#">Chính sách bảo mật thanh toán</a></li>
+                            <li><a href="#">Chính sách đổi trả và kiểm hàng</a></li>
+                            <li><a href="#">Điều kiện vận chuyển và giao nhận</a></li>
+                            <li><a href="#">Phương thức thanh toán</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Follow us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Ngôn ngữ</h3>
+                        <div class="languages">
+                            <!-- <a href="#"><img src="flag-vn.png" alt="Vietnamese"> VN</a>
+                            <a href="#"><img src="flag-uk.png" alt="English"> EN</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <p>&copy; 2025 Web Bán Vé - Tất cả các quyền được bảo vệ.</p>
+
+        </footer>
+        
+ 
+  </div>
+</div>
+</body>
+</html>
