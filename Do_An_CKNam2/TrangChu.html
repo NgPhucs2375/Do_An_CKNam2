@@ -53,13 +53,13 @@
   <div class="col-12">
     <ul class="nav nav-pills justify-content-center gap-3">
       <li class="nav-item">
-        <a class="nav-link btn btn-outline-light text-white" href="./SKKhac.html">Sự kiện khác</a>
+        <a class="nav-link btn btn-outline-light text-black" href="./SKKhac.html">Sự kiện khác</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-outline-light text-white" href="./banggia.html">Bảng giá</a>
+        <a class="nav-link btn btn-outline-light text-black" href="./banggia.html">Bảng giá</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-outline-light text-white" href="#null">Mô Tả</a>
+        <a class="nav-link btn btn-outline-light text-black" href="#null">Mô tả</a>
       </li>
     </ul>
   </div>
@@ -68,38 +68,39 @@
   </div>
 </div>
 
-    <div class="taskbar-header2">
-       <div class="container d-flex justify-content-center my-4">
-  <div id="videoCarousel" class="carousel slide w-100" style="max-width: 800px;" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="ratio ratio-16x9">
-          <video class="d-block w-100" controls autoplay muted>
-            <source src="Videov/vd_hd_1.mp4" type="video/mp4">
-          </video>
+   <div class="taskbar-header2 py-5 bg-dark">
+  <div class="container d-flex justify-content-center">
+    <div id="videoCarousel" class="carousel slide video-carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="ratio ratio-16x9">
+            <video class="d-block w-100" controls autoplay muted>
+              <source src="Videov/vd_hd_1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-16x9">
+            <video class="d-block w-100" controls autoplay muted>
+              <source src="Videov/vd_hd_2.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="ratio ratio-16x9">
-          <video class="d-block w-100" controls autoplay muted>
-            <source src="Videov/vd_hd_2.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      
-    </div>
 
-    <!-- Nút điều hướng -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Trước</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Tiếp</span>
-    </button>
+      <!-- Nút điều hướng trái/phải -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Trước</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Tiếp</span>
+      </button>
+    </div>
   </div>
 </div>
+
        
     </div>       
 
@@ -183,7 +184,7 @@
 
 
     
-        <h1 >Dành cho Bạn</h1>
+        <h1 class="title">Dành cho Bạn</h1>
         <div class="chinh">
     
             <div class="dcb"> 
@@ -228,7 +229,7 @@
             </div>
         
         </div>
-        <h1 style="border-bottom: 10px solid rgb(18, 219, 18);">Cuối tuần này</h1>
+        <h1 class="title" style="border-bottom: 10px solid rgb(18, 219, 18);">Cuối tuần này</h1>
         <div class="chinh">
             
             <div class="dcb"> 
@@ -278,31 +279,22 @@
     </div>
 
     <!-- Quảng cáo  -->
-<div class="container py-4">
-  <div class="justify-content-center">
-    <div class="text-center mb-4">
-      <!-- Thêm lớp card-custom vào đây: -->
-      <div class="card card-custom bg-dark text-white shadow-sm border-0">
-        <a href="#" class="text-white text-decoration-none d-block h-100">
-          <!-- Ảnh sẽ phủ kín cả chiều cao và rộng của .card -->
-          <img src="./hinhanhnhom/breakef.jpg"
-               class="card-img img-fluid"
-               alt="Rest in Peace" />
-          <!-- Overlay nằm chồng lên ảnh, chính giữa theo cả 2 trục -->
-          <div class="card-img-overlay overlay d-flex 
-                      justify-content-center align-items-center flex-column">
-           <h5 class="card-title mb-2">Ưu Đãi Cuối Tuần: GIẢM 10K</h5>
-                <p class="card-text">
-                  Áp dụng cho đơn hàng từ 200K • Chỉ từ 1–7/06<br>
-                  Nhanh tay đặt ngay kẻo trễ!
-                </p>
-
+<div class="container py-2 mt-0"> <!-- Giảm padding-top (py-2), bỏ margin-top (mt-0) để xích lên -->
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <!-- Thêm border đen và bo tròn nhẹ -->
+      <div class="card bg-dark text-white shadow-sm border border-3 border-black rounded-3">
+        <a href="#" class="text-white text-decoration-none">
+          <img src="/Do_An_CKNam2/hinhanhnhom/giamgia.png" class="card-img img-fluid w-100 rounded-3" alt="Banner">
+          
           </div>
         </a>
       </div>
     </div>
   </div>
 </div>
+
+
 
 
     
