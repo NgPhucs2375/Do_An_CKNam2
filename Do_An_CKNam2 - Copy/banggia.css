@@ -1,0 +1,48 @@
+body {
+    background-color: #f8f9fa;
+  }
+
+  header {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+  }
+
+  footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+  }
+
+  .table-scroll {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+
+  .card {
+    border-radius: 10px;
+  }
+
+ 
+.hover-tenve:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hover-thoigian:hover {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hover-gia:hover {
+  background-color: #ffc107;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
